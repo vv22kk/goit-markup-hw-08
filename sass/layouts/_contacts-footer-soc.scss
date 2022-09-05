@@ -1,0 +1,41 @@
+.contacts-footer-soc {
+  margin-right: auto;
+}
+.list-footer-soc {
+  display: flex;
+  gap: 10px;
+}
+
+.text-footer-soc {
+  margin-bottom: 20px;
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+  color: var(--footer-text-white);
+}
+.link-footer-soc {
+  @extend %flex;
+  color: var(--footer-icon-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-icon-back);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-blue-color);
+  }
+}
+
+.icon-footer-soc {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}

@@ -1,0 +1,28 @@
+.inform {
+  padding-top: 0;
+}
+.inform__list {
+  display: flex;
+  column-gap: 30px;
+}
+.inform__item {
+  width: calc((100% - 60px) / 3);
+}
+.inform__title {
+  margin-bottom: 50px;
+}
+.inform__img-thumb {
+  position: relative;
+}
+.inform__text {
+  position: absolute;
+  @extend %flex;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+
+  color: var(--btn-white-color);
+  background: var(--back-inform-text-color);
+}

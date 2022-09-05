@@ -1,0 +1,42 @@
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-secsion {
+  margin-right: 70px;
+}
+.footer {
+  background-color: var(--background-hero-color);
+  padding: 60px 0;
+}
+.footer-logo {
+  display: block;
+  color: var(--hero-white-color);
+  margin-bottom: 20px;
+}
+.logo-part {
+  color: var(--accent-blue-color);
+}
+.contact-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contact-item {
+  font-style: normal;
+}
+.contact {
+  line-height: 1.71;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &-mail,
+  &-tel {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &-link {
+    color: var(--footer-text-white);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-blue-color);
+  }
+}

@@ -1,0 +1,26 @@
+.benefits__list {
+  display: flex;
+  column-gap: 30px;
+}
+.benefits__img {
+  @extend %flex;
+  gap: 30px;
+
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-benefits-icon);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.benefits__item {
+  width: calc((100% - 90px) / 4);
+}
+.benefits__pre-text {
+  margin-bottom: 10px;
+  @include font(700, 14px, 1.14, null);
+  color: var(--text-link-color);
+  text-transform: uppercase;
+}
+.benefits__text {
+  line-height: 1.71;
+}

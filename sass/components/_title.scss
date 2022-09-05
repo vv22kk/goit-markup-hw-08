@@ -1,0 +1,5 @@
+.title {
+  @include font(700, 36px, 1.16, null);
+  text-align: center;
+  color: var(--text-link-color);
+}
