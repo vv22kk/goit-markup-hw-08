@@ -3,11 +3,13 @@
 }
 .porfolio-list-button {
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-bottom: 50px;
   gap: 8px;
+  row-gap: 15px;
 }
 /* .porfolio-list-button > .porfolio-item:not(:last-child) {
   margin-right: 8px;
@@ -15,6 +17,7 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .portfolio-link {
@@ -29,7 +32,14 @@
   }
 }
 .portfolio-item-after {
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 60px) / 3);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
+  }
 }
 
 .portfolio-card {

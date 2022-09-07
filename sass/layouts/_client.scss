@@ -1,17 +1,14 @@
-.client__title {
-  margin-bottom: 50px;
-}
 .client__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .client__link {
   @extend %flex;
   border: 1px solid var(--border-client-icon);
   color: var(--client-icon);
   border-radius: 4px;
-  width: 170px;
   height: 92px;
   transition-property: color, border-color;
   transition-duration: 250ms;
@@ -27,4 +24,17 @@
   fill: currentColor;
   width: 106px;
   height: 60px;
+}
+.client__item {
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+      }
+    }
+  }
 }

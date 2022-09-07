@@ -24,6 +24,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 button {
@@ -53,8 +54,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -109,10 +116,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -140,6 +162,14 @@ body {
   line-height: 1.16;
   text-align: center;
   color: var(--text-link-color);
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 1.18;
+  }
 }
 
 .backdrop {
@@ -473,12 +503,13 @@ body {
 
 .benefits__list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .benefits__img {
   gap: 30px;
-  width: 270px;
+  max-width: 100%;
   height: 120px;
   background-color: var(--background-benefits-icon);
   border-radius: 4px;
@@ -486,7 +517,17 @@ body {
 }
 
 .benefits__item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .benefits__pre-text {
@@ -496,6 +537,11 @@ body {
   line-height: 1.14;
   color: var(--text-link-color);
   text-transform: uppercase;
+}
+@media screen and (max-width: 767.5px) {
+  .benefits__pre-text {
+    text-align: center;
+  }
 }
 
 .benefits__text {
@@ -542,16 +588,25 @@ body {
 
 .card-list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card-list__item {
-  width: calc((100% - 90px) / 4);
-  max-width: 100%;
-  height: auto;
   background: var(--card-back-personal-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .card-list__wrap {
@@ -604,21 +659,17 @@ body {
   height: 20px;
 }
 
-.client__title {
-  margin-bottom: 50px;
-}
-
 .client__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .client__link {
   border: 1px solid var(--border-client-icon);
   color: var(--client-icon);
   border-radius: 4px;
-  width: 170px;
   height: 92px;
   transition-property: color, border-color;
   transition-duration: 250ms;
@@ -633,6 +684,22 @@ body {
   fill: currentColor;
   width: 106px;
   height: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .client__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) and (min-width: 1200px) {
+  .client__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .footer-container {
@@ -778,11 +845,10 @@ body {
 
 .porfolio-list-button {
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+  row-gap: 15px;
 }
 
 /* .porfolio-list-button > .porfolio-item:not(:last-child) {
@@ -791,6 +857,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -804,8 +871,15 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item-after {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 768px) {
+  .portfolio-item-after {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .portfolio-item-after {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-card {
