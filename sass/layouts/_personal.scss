@@ -24,6 +24,7 @@
     }
   }
 }
+
 .card-list__wrap {
   padding: 30px 0;
 }
@@ -44,6 +45,7 @@
 }
 .media {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
