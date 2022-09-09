@@ -24,7 +24,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  max-width: 100%;
 }
 
 button {
@@ -899,6 +898,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
