@@ -1,42 +1,54 @@
+.subscription {
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: flex-start;
+  }
+}
 .footer-email-tg {
   @include font(700, 14px, 1.14, null);
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--btn-white-color);
+  text-align: center;
 }
+
 .thumb-subscription {
-  @extend %flex;
+  @media screen and (min-width: 1200px) {
+    // @extend %flex;
+  }
 }
-.tg-lable {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 16px;
-  color: var(--footer-text-white);
-}
+// .tg-lable {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   padding-left: 16px;
+//   color: var(--footer-text-white);
+// }
 .subscription-tg {
-  width: 358px;
+  display: block;
+  width: 100%;
   height: 50px;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   color: var(--footer-text-white);
-
   @include font(null, 16px, 1.25, null);
-  margin-right: 12px;
-  padding-left: 16px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
   &:focus,
   &:hover {
     border-color: var(--accent-blue-color);
   }
 }
-
 .button-tg {
   @extend %flex;
   padding: 10px 28px;

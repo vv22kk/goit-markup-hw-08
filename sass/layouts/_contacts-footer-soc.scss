@@ -1,9 +1,12 @@
 .contacts-footer-soc {
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .list-footer-soc {
   display: flex;
   gap: 10px;
+  margin-bottom: 60px;
 }
 
 .text-footer-soc {

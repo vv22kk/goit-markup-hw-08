@@ -1,7 +1,10 @@
 .navigation__list {
-  display: flex;
+  // display: flex;
   align-items: center;
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .navigation__list,
 .navigation__item + .navigation__item {
@@ -16,23 +19,51 @@
   & span {
     color: var(--accent-blue-color);
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .logo {
   font-family: 'Raleway', sans-serif;
-  // @include font(700, 26px, 1.19, null);
-  @include font(700, 24px, 1.17, null);
-
-  @media screen and (min-width: 1200px) {
-    @include font(700, 26px, 1.19, null);
-  }
+  @include font(700, 26px, 1.19, null);
 }
 
 .header__container {
-  // display: flex;
+  display: flex;
   // align-items: center;
   // justify-content: center;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
-.menu-open-btn,
+.connect__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.menu-open-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: #212121;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 .menu-close-btn {
   position: absolute;
   top: 10px;
@@ -52,7 +83,7 @@
   color: #212121;
 }
 .menu-close-btn:focus,
-.menu-open-btn {
+.menu-open-btn:focus {
   fill: #2196f3;
 }
 .header__text {
@@ -69,30 +100,61 @@
 .navigation__link {
   position: relative;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--header-link-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__connect {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
 }
 .connect {
   margin-left: auto;
   display: none;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .connect__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.connect__contact {
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 .connect .connect__contact + .connect__contact {
-  margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 .connect__mail,
 .connect__tel {
@@ -127,7 +189,7 @@
   background: #ffffff;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 .menu-container {
@@ -135,6 +197,9 @@
   flex-direction: column;
   padding: 48px 40px;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mob-menu__navigation-item:not(:last-child) {
   margin-bottom: 32px;
@@ -152,8 +217,6 @@
 }
 .current {
   color: #2196f3;
-}
-.mob-connect {
 }
 .mob-connect__connect-contact {
   margin-bottom: 32px;

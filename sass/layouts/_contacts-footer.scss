@@ -1,27 +1,40 @@
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  //   display: flex;
+  //   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
 .footer-secsion {
-  margin-right: 70px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer {
   background-color: var(--background-hero-color);
   padding: 60px 0;
 }
+
 .footer-logo {
   display: block;
   color: var(--hero-white-color);
   margin-bottom: 20px;
 }
+
 .logo-part {
   color: var(--accent-blue-color);
 }
 .contact-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+.footer_contact {
+  text-align: center;
 }
 .contact-item {
   font-style: normal;
+  margin-bottom: 60px;
 }
 .contact {
   line-height: 1.71;
