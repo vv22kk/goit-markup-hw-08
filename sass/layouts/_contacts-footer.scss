@@ -1,8 +1,9 @@
 .footer-container {
-  //   display: flex;
-  //   flex-direction: column;
-  align-items: center;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-secsion {
@@ -21,6 +22,9 @@
   display: block;
   color: var(--hero-white-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .logo-part {
@@ -35,6 +39,9 @@
 .contact-item {
   font-style: normal;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .contact {
   line-height: 1.71;

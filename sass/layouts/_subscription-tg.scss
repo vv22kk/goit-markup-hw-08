@@ -12,11 +12,14 @@
   margin-bottom: 20px;
   color: var(--btn-white-color);
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .thumb-subscription {
   @media screen and (min-width: 1200px) {
-    // @extend %flex;
+    display: flex;
   }
 }
 // .tg-lable {
@@ -44,6 +47,10 @@
   @media screen and (min-width: 480px) {
     width: 358px;
     margin-right: 12px;
+    @media screen and(min-width: 1200px) {
+      display: flex;
+      margin-bottom: 0;
+    }
   }
   &:focus,
   &:hover {
