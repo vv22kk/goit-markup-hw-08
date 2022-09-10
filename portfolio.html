@@ -23,12 +23,13 @@
   </head>
   <body>
     <!------------------- header --------------------->
-    <header class="header header-portfolio">
+    <header class="header">
       <div class="header__container container">
         <nav class="navigation header__container">
           <a href="./index.html" class="header__logo logo link" lang="en"
             ><span class="logo-part">Web</span>Studio</a
           >
+
           <!------------------- navigation --------------------->
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -54,7 +55,7 @@
           <li class="connect__contact">
             <a
               href="mailto:info@devstudio.com"
-              class="connect__link connect__mail header__text link accent"
+              class="connect__link connect__mail header__text link"
             >
               <svg class="connect__logo icon" width="16" height="12">
                 <use href="./images/icon-svg.svg#icon-mail"></use>
@@ -72,6 +73,69 @@
               </svg>
               +38 096 111 11 11</a
             >
+          </li>
+        </ul>
+      </div>
+      <!-- ----------------button for open mobile--------------->
+      <button type="button" class="menu-open-btn" data-menu-open>
+        <svg class="svg-close" width="40" height="40">
+          <use href="./images/icon-svg.svg#icon-menu_clz"></use>
+        </svg>
+      </button>
+      <!----------------mob-menu ----------------------->
+      <div class="mob-menu menu-container is-hidden" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="svg-open" width="40px" height="40px">
+            <use href="./images/icon-svg.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <div class="mob-menu-top">
+          <ul class="mob-menu__navigation-list list">
+            <li class="mob-menu__navigation-item">
+              <a href="./index.html" class="mob-menu__navigation__link link"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-menu__navigation-item">
+              <a
+                href="./portfolio.html"
+                class="mob-menu__navigation__link link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu__navigation-item">
+              <a href="" class="mob-menu__navigation__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mob-connect list">
+          <li class="mob-connect__connect-contact">
+            <a
+              href="tel:+380961111111"
+              class="mob-connect__connect-link-mobil link current"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-connect__connect-contact- mob">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mob-connect__connect-contact-mail link"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link link">Instagram</a>
+          </li>
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link link">Twitter</a>
+          </li>
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link link">Facebook</a>
+          </li>
+          <li class="mob-so-item">
+            <a href="" class="mob-soc-link link">LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -515,95 +579,98 @@
     <!-----------------------contacts-footer-------------------->
     <footer class="footer">
       <div class="footer-container container">
-        <div class="footer-secsion">
-          <a href="./index.html" class="footer-logo logo link" lang="en"
-            ><span class="logo-part">Web</span>Studio</a
-          >
-          <address class="footer_contact">
-            <ul class="contact-list list">
-              <li class="contact-item">
+        <div class="footer-wrapper">
+          <div class="footer-secsion">
+            <a href="./index.html" class="footer-logo logo link" lang="en"
+              ><span class="logo-part">Web</span>Studio</a
+            >
+            <address class="footer_contact">
+              <ul class="contact-list list">
+                <li class="contact-item">
+                  <a
+                    href="https://goo.gl/maps/FX4csDSYSpoSxQZz6"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="contact-link contact link btn-accent"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="contact-item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="contact-mail contact link btn-accent"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <a
+                    href="tel:+380991111111"
+                    class="contact-tel contact link btn-accent"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- -------------- contacts-footer-soc ------------------- -->
+          <div class="contacts-footer-soc">
+            <p class="text-footer-soc">Присойденяйтесь</p>
+            <ul class="list list-footer-soc">
+              <li class="item-footer-soc">
                 <a
-                  href="https://goo.gl/maps/FX4csDSYSpoSxQZz6"
+                  href=""
                   target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  class="contact-link contact link btn-accent"
+                  rel="noreferrer nofollow noopener"
+                  class="link link-footer-soc"
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  <svg class="icon-footer-soc">
+                    <use href="./images/icon-svg.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contact-item">
+              <li class="item-footer-soc">
                 <a
-                  href="mailto:info@example.com"
-                  class="contact-mail contact link btn-accent"
-                  >info@example.com</a
+                  href=""
+                  target="_blank"
+                  rel="noreferrer nofollow noopener"
+                  class="link link-footer-soc"
                 >
+                  <svg class="icon-footer-soc">
+                    <use href="./images/icon-svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contact-item">
+              <li class="item-footer-soc">
                 <a
-                  href="tel:+380991111111"
-                  class="contact-tel contact link btn-accent"
-                  >+38 099 111 11 11</a
+                  href=""
+                  target="_blank"
+                  rel="noreferrer nofollow noopener"
+                  class="link link-footer-soc"
                 >
+                  <svg class="icon-footer-soc">
+                    <use href="./images/icon-svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-footer-soc">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noreferrer nofollow noopener"
+                  class="link link-footer-soc"
+                >
+                  <svg class="icon-footer-soc">
+                    <use href="./images/icon-svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <!-------------------- contacts-footer-soc --------------------->
-        <div class="contacts-footer-soc">
-          <p class="text-footer-soc">Присойденяйтесь</p>
-          <ul class="list list-footer-soc">
-            <li class="item-footer-soc">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer nofollow noopener"
-                class="link link-footer-soc"
-              >
-                <svg class="icon-footer-soc">
-                  <use href="./images/icon-svg.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-footer-soc">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer nofollow noopener"
-                class="link link-footer-soc"
-              >
-                <svg class="icon-footer-soc">
-                  <use href="./images/icon-svg.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-footer-soc">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer nofollow noopener"
-                class="link link-footer-soc"
-              >
-                <svg class="icon-footer-soc">
-                  <use href="./images/icon-svg.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-footer-soc">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer nofollow noopener"
-                class="link link-footer-soc"
-              >
-                <svg class="icon-footer-soc">
-                  <use href="./images/icon-svg.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <!-------------------- subscription-tg  --------------------->
-        <div class="">
+        <div class="subscription">
           <p class="footer-email-tg">Подпишись на россылку</p>
           <form class="thumb-subscription">
             <input
@@ -621,5 +688,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

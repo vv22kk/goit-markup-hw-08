@@ -178,6 +178,8 @@ body {
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--timing-function), visibility 250ms;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .modal {
@@ -195,6 +197,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   padding: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -591,6 +598,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 
 .menu-container {
