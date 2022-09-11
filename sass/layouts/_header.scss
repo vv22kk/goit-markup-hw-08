@@ -8,8 +8,9 @@
 }
 .navigation__list,
 .navigation__item + .navigation__item {
-  margin-left: 50px;
+  gap: 50px;
 }
+
 .header__logo {
   display: inline;
   // margin-right: 93px;
@@ -42,6 +43,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+  fill: currentColor;
 }
 .menu-open-btn {
   position: absolute;
@@ -159,6 +161,7 @@
 .connect__mail,
 .connect__tel {
   color: var(--main-body-color);
+  fill: var(--main-body-color);
 }
 // .icon,
 // .header__logo
@@ -211,7 +214,7 @@
   align-items: center;
   color: #212121;
   font-weight: 500;
-  font-size: 7vw;
+  font-size: 40px;
   line-height: 1.18;
   padding: 0;
   color: #212121;
@@ -232,12 +235,13 @@
 }
 .mob-soc-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 .mob-soc-link {
-  @include font(500, 18px, 1.22, 0.02em);
+  @include font(null, 18px, 1.22, 0.02em);
   color: #2196f3;
   margin-right: 10px;
 }

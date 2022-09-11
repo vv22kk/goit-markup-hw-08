@@ -45,11 +45,12 @@
   cursor: pointer;
   margin-bottom: 20px;
   @media screen and (min-width: 480px) {
-    width: 358px;
+    width: 450px;
     margin-right: 12px;
     @media screen and(min-width: 1200px) {
       display: flex;
       margin-bottom: 0;
+      width: 358px;
     }
   }
   &:focus,

@@ -25,12 +25,16 @@
   align-items: center;
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
+    margin-right: 93px;
   }
 }
 .list-footer-soc {
   display: flex;
   gap: 10px;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .text-footer-soc {

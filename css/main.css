@@ -180,6 +180,7 @@ body {
   transition: opacity 250ms var(--timing-function), visibility 250ms;
   padding-left: 15px;
   padding-right: 15px;
+  overflow-y: scroll;
 }
 
 .modal {
@@ -200,7 +201,7 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .modal {
-    max-width: 450px;
+    max-width: 320px;
   }
 }
 
@@ -385,7 +386,7 @@ body {
 
 .navigation__list,
 .navigation__item + .navigation__item {
-  margin-left: 50px;
+  gap: 50px;
 }
 
 .header__logo {
@@ -425,6 +426,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+  fill: currentColor;
 }
 
 .menu-open-btn {
@@ -566,6 +568,7 @@ body {
 .connect__mail,
 .connect__tel {
   color: var(--main-body-color);
+  fill: var(--main-body-color);
 }
 
 .icon {
@@ -622,7 +625,7 @@ body {
   align-items: center;
   color: #212121;
   font-weight: 500;
-  font-size: 7vw;
+  font-size: 40px;
   line-height: 1.18;
   padding: 0;
   color: #212121;
@@ -654,13 +657,13 @@ body {
 
 .mob-soc-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
 .mob-soc-link {
-  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
@@ -961,8 +964,17 @@ body {
   }
 }
 
+.footer-secsion {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-secsion {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-secsion {
+    margin-bottom: 0px;
     margin-right: 70px;
   }
 }
@@ -997,7 +1009,6 @@ body {
 
 .contact-item {
   font-style: normal;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .contact-item {
@@ -1044,6 +1055,7 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts-footer-soc {
     align-items: flex-start;
+    margin-right: 93px;
   }
 }
 
@@ -1051,6 +1063,11 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .list-footer-soc {
+    margin-bottom: 0;
+  }
 }
 
 .text-footer-soc {
@@ -1130,7 +1147,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .subscription-tg {
-    width: 358px;
+    width: 450px;
     margin-right: 12px;
   }
 }
@@ -1138,6 +1155,7 @@ body {
   .subscription-tg {
     display: flex;
     margin-bottom: 0;
+    width: 358px;
   }
 }
 .subscription-tg:focus, .subscription-tg:hover {
@@ -1270,7 +1288,7 @@ body {
   line-height: 1.55;
   color: var(--btn-white-color);
   background: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
