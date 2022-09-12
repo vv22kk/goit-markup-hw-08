@@ -13,6 +13,9 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 /* .porfolio-list-button > .porfolio-item:not(:last-child) {
   margin-right: 8px;
@@ -22,6 +25,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+  }
 }
 
 .portfolio-link {

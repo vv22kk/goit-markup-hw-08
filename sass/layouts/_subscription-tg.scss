@@ -1,5 +1,8 @@
 .subscription {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
   @media screen and (min-width: 1200px) {
     // display: flex;
     // flex-direction: row;
@@ -47,10 +50,13 @@
   @media screen and (min-width: 480px) {
     width: 450px;
     margin-right: 12px;
-    @media screen and(min-width: 1200px) {
-      display: flex;
-      margin-bottom: 0;
-      width: 358px;
+    @media screen and (min-width: 480px) {
+      margin-right: 0px;
+      @media screen and(min-width: 1200px) {
+        display: flex;
+        margin-bottom: 0;
+        width: 358px;
+      }
     }
   }
   &:focus,

@@ -4,6 +4,7 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: 88px;
   }
 }
 .navigation__list,
@@ -137,7 +138,7 @@
 .connect__link {
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   @media screen and (min-width: 768px) {
     padding-top: 5px;
     padding-bottom: 5px;

@@ -187,7 +187,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   background: var(--background-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -199,9 +199,19 @@ body {
   opacity: 1;
   padding: 40px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .modal {
-    max-width: 320px;
+    min-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .modal {
+    max-width: 528px;
   }
 }
 
@@ -381,6 +391,7 @@ body {
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
+    margin-left: 88px;
   }
 }
 
@@ -538,7 +549,6 @@ body {
 .connect__link {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .connect__link {
@@ -1039,7 +1049,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
     align-items: baseline;
   }
 }
@@ -1056,8 +1065,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contacts-footer-soc {
-    align-items: flex-start;
+    display: block;
     margin-right: 93px;
+    text-align: left;
   }
 }
 
@@ -1109,6 +1119,11 @@ body {
 .subscription {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
 .footer-email-tg {
   font-weight: 700;
   font-size: 14px;
@@ -1153,7 +1168,12 @@ body {
     margin-right: 12px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (min-width: 480px) {
+  .subscription-tg {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 480px) and (min-width: 1200px) {
   .subscription-tg {
     display: flex;
     margin-bottom: 0;
@@ -1189,6 +1209,11 @@ body {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .porfolio-list-button {
+    margin-bottom: 30px;
+  }
+}
 
 /* .porfolio-list-button > .porfolio-item:not(:last-child) {
   margin-right: 8px;
@@ -1198,6 +1223,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    justify-content: left;
+  }
 }
 
 .portfolio-link {
